@@ -85,3 +85,12 @@ El método principal será la **ablación modular**: comparar un agente completo
 **Fase 0 — Inicialización del proyecto.**
 
 Todavía no hay implementación de los mecanismos. La prioridad actual es fijar estructura, documentación y contratos experimentales antes de comenzar a programar comportamiento.
+
+## Documentación vigente
+
+- [Informe principal v0.2](docs/PROJECT_REPORT.md)
+- [ADR-001 — Frontera epistemológica](docs/decisions/ADR-001-epistemic-boundary.md)
+- [Contratos conceptuales de datos](docs/data-contracts.md)
+- [Glosario operativo](docs/glossary.md)
+
+La versión 0.1 original del informe se conserva en `docs/PROJECT_REPORT_v0.1.docx`. El agente experimental no tendrá acceso directo al estado verdadero del entorno ni a metadata experimental; esta decisión no implementa todavía ningún módulo.

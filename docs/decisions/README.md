@@ -10,3 +10,7 @@ Each ADR should contain:
 4. Assumptions
 5. Consequences
 6. Conditions that would justify revisiting the decision
+
+## Index
+
+- [ADR-001 — Frontera epistemológica entre mundo, percepción y modelo interno](ADR-001-epistemic-boundary.md) — accepted, 2026-09-14
