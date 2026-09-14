@@ -1,0 +1,9 @@
+[project]
+name = "consciousness-hypothesis-lab"
+version = "0.0.1"
+description = "Experimental, modular laboratory for testing hypotheses about perception, self-models, memory, prediction and consciousness."
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
