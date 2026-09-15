@@ -4,6 +4,10 @@
 **Documento vivo — Versión 0.2 — 14 de septiembre de 2026**  
 **Estado:** marco conceptual y diseño experimental inicial; no existen todavía resultados experimentales.
 
+**Actualización de estado (2026-09-15):** el proyecto entró en una fase formal de [revisión del estado del arte](literature/state-of-the-art.md). La arquitectura propuesta hasta ahora es **PROVISIONAL — PENDIENTE DE REVISIÓN TEÓRICA**. Antes de la siguiente decisión se evaluará la secuencia `TEORÍA → INDICADORES → PREDICCIONES → ARQUITECTURA → EXPERIMENTO`; no se han congelado indicadores ni mecanismos adicionales y ADR-001 permanece aceptado.
+
+**Refinamiento de misión (2026-09-15):** la [frontera entre herencia, aprendizaje, emergencia y metadata](development/inheritance-learning-emergence.md) pasa a ser una pregunta metodológica central. La arquitectura cognitiva permanece **PROVISIONAL — PENDIENTE DE REVISIÓN TEÓRICA Y EXPERIMENTAL**. Esta actualización amplía el foco de investigación sin borrar la hipótesis histórica ni modificar ADR-001.
+
 Este documento es la versión Markdown mantenible del informe principal. La versión 0.1 original se conserva sin modificaciones en [`PROJECT_REPORT_v0.1.docx`](PROJECT_REPORT_v0.1.docx). Esta versión no reemplaza su historial: registra qué formulaciones se revisaron y por qué.
 
 ## 1. Propósito y alcance
@@ -13,6 +17,14 @@ Este documento es la versión Markdown mantenible del informe principal. La vers
 No se postula una entidad separada llamada consciencia ni un observador interno adicional. Tampoco se afirma que implementar estos mecanismos sea suficiente para producir consciencia. El sistema será un modelo funcional, modular e interpretable destinado a producir predicciones contrastables y a admitir ablaciones, modificaciones y refutación.
 
 El proyecto debe ser reproducible, inspeccionable, falsable y auditable. Un comportamiento que parezca humano, el uso de la palabra “yo” o una única ejecución llamativa no constituyen evidencia suficiente.
+
+### 1.1 Misión refinada y objetivos
+
+`OBJETIVO ACTUAL` El proyecto investiga hasta qué punto un agente artificial mínimo puede desarrollar, por experiencia e interacción con un entorno, capacidades cognitivas y patrones de comportamiento análogos a los de organismos conscientes. Partirá de una arquitectura inicial explícita y auditable para separar causalmente qué estructuras y conocimientos fueron heredados, qué contenidos se aprendieron y qué propiedades podrían considerarse emergentes. Reproducir comportamientos asociados con consciencia no implica experiencia fenomenal.
+
+Esta misión ordena tres objetivos: **desarrollo cognitivo artificial** mediante historia individual y sin semántica humana precargada cuando sea experimentalmente posible; **descomposición causal** de la contribución de predisposiciones, condiciones, aprendizaje y diseño indirecto; **relación posterior con consciencia** mediante comparación con teorías e indicadores de la [revisión del estado del arte](literature/state-of-the-art.md). La consciencia continúa como motivación científica central, pero las capacidades funcionales, organizaciones candidatas y afirmaciones fenomenales se evalúan en niveles distintos.
+
+La formulación de la sección 1 y las revisiones históricas de la sección 9 quedan como antecedentes de la hipótesis inicial, no como compromiso de implementar todos los módulos enumerados. Antes de V1 falta especificar `Agent(t0)`, procedencia de cada variable cognitiva, capacidad inicial, experiencia permitida, controles y falsadores; el [marco de procedencia](development/inheritance-learning-emergence.md) registra esas preguntas sin congelar nuevos módulos.
 
 ## 2. Frontera epistemológica
 

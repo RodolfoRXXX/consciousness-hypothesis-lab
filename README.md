@@ -1,10 +1,12 @@
 # Consciousness Hypothesis Lab
 
-Laboratorio de software para formular, implementar y poner a prueba una hipótesis modular sobre consciencia, construcción del yo, percepción, memoria, predicción y aprendizaje por experiencia.
+Laboratorio experimental para estudiar el desarrollo cognitivo de un agente artificial mínimo y, posteriormente, comparar organizaciones resultantes con teorías e indicadores científicos de consciencia.
 
 ## Propósito
 
 El objetivo no es construir un sistema que *parezca* consciente ni demostrar de antemano que una hipótesis es correcta. El objetivo es construir un entorno experimental reproducible donde cada mecanismo propuesto pueda aislarse, modificarse o eliminarse, y donde las consecuencias de esas intervenciones puedan medirse.
+
+La misión actual prioriza distinguir qué capacidades estaban disponibles antes de la primera experiencia, cuáles dependen causalmente de la historia individual y cuáles son candidatas a emergencia. La consciencia fenomenal no se infiere de comportamiento humano similar. La arquitectura cognitiva sigue **PROVISIONAL — PENDIENTE DE REVISIÓN TEÓRICA Y EXPERIMENTAL**.
 
 ## Principios
 
@@ -64,6 +66,8 @@ La primera arquitectura experimental contempla, como mínimo:
 
 En la V1 estos módulos serán explícitos e interpretables. El aprendizaje estadístico o neuronal se incorporará de forma incremental solo después de establecer una línea base comprensible.
 
+Esta enumeración registra la propuesta inicial; su necesidad, composición y orden permanecen por revisar antes de implementar V1.
+
 ## Estrategia experimental
 
 Cada ejecución deberá registrar:
@@ -86,9 +90,13 @@ El método principal será la **ablación modular**: comparar un agente completo
 
 Todavía no hay implementación de los mecanismos. La prioridad actual es fijar estructura, documentación y contratos experimentales antes de comenzar a programar comportamiento.
 
+**Estado documental actual:** revisión del estado del arte y formalización de procedencia heredada, aprendida, emergente y experimental. La propuesta modular anterior se conserva como historia del diseño; todavía no es la arquitectura V1 aprobada.
+
 ## Documentación vigente
 
 - [Informe principal v0.2](docs/PROJECT_REPORT.md)
+- [Revisión del estado del arte](docs/literature/state-of-the-art.md)
+- [Procedencia del desarrollo: herencia, aprendizaje y emergencia](docs/development/inheritance-learning-emergence.md)
 - [ADR-001 — Frontera epistemológica](docs/decisions/ADR-001-epistemic-boundary.md)
 - [Contratos conceptuales de datos](docs/data-contracts.md)
 - [Glosario operativo](docs/glossary.md)
