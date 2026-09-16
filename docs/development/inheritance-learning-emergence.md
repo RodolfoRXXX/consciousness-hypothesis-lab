@@ -3,6 +3,8 @@
 **Fecha:** 2026-09-15  
 **Estado:** marco metodológico provisional para futuros protocolos; no fija sensores, módulos, algoritmos ni ADR-002. La arquitectura cognitiva es **PROVISIONAL — PENDIENTE DE REVISIÓN TEÓRICA Y EXPERIMENTAL**.
 
+**Aplicación a V1 (2026-09-16):** el [alcance experimental del organismo artificial V1](../experiments/v1-developmental-scope.md) aplica este marco a un `Agent(t0)` provisional, sin congelar algoritmos ni los módulos cognitivos históricos.
+
 ## Pregunta y alcance
 
 ¿Con qué nace el organismo artificial y qué tiene permitido aprender? Ante cualquier capacidad posterior: ¿proviene causalmente de su experiencia, de lo que le dimos al inicio, de una organización nueva de mecanismos simples o de información introducida por el experimento? La documentación actual no permite responder eso para todos los componentes: aún no hay agente ni parámetros iniciales definidos.

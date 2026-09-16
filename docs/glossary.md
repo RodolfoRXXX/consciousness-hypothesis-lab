@@ -13,6 +13,14 @@ Intervención controlada que elimina, desactiva o altera un módulo para medir s
 
 Contenido o estructura interna modificada por dependencia causal de la historia individual de señales y consecuencias autorizadas. Cambiar con el tiempo o con azar no basta: se requieren historias contrastadas, estado inicial controlado y traza del mecanismo modificado.
 
+## Apetitivo / `appetitive`
+
+Clasificación funcional del investigador para una señal corporal primaria asociada por diseño con una restauración o estado corporal favorable, o para un patrón que posteriormente la predice. No significa placer, gusto, deseo ni «bueno» para el agente. La condición base V1 conserva esta señal como dimensión corporal y no la reduce a reward escalar.
+
+## Aversivo / `aversive`
+
+Clasificación funcional del investigador para una señal corporal primaria producida por ciertas perturbaciones, o para un patrón que posteriormente la predice. No significa dolor, miedo, sufrimiento ni «malo» para el agente.
+
 ## Agencia
 
 Capacidad funcional de seleccionar acciones y aprender relaciones entre acciones registradas y consecuencias percibidas. La atribución entre cambio propio y perturbación externa es una pregunta experimental; agencia no implica libre albedrío metafísico.
@@ -31,6 +39,14 @@ La frase anterior conserva la hipótesis inicial. La misión refinada estudia pr
 
 Transformación de estados, modelos y conducta durante la historia de un mismo agente, desde `Agent(t0)`. No equivale a evolución heredable entre generaciones ni garantiza aprendizaje o emergencia.
 
+## Consecuencia corporal / `body consequence`
+
+Cambio corporal que produce señales internas autorizadas y puede modificar capacidades funcionales. El cambio verdadero pertenece a `GroundTruthState`; el agente accede solo a su consecuencia sensorial. Una `PrimaryConsequence` es una consecuencia corporal directa, no una etiqueta de éxito, reward ni afirmación fenomenal.
+
+## Exploración
+
+Variación o muestreo de acciones ante información insuficiente bajo una regla operacional declarada. El requisito futuro `uncertainty → increased exploration` no presupone curiosidad humana ni fija todavía un algoritmo.
+
 ## Diseñado indirectamente / inducido
 
 Bandera de auditoría para una capacidad aparentemente adquirida que puede explicarse total o parcialmente por pistas implícitas en canales, primitivas, ruteo, recompensa, nombres, inicialización o entrenamiento. Un sesgo heredado declarado puede ser legítimo; atribuirle a la experiencia lo que aportó el diseño no lo es.
@@ -46,6 +62,10 @@ En el alcance funcional del proyecto, variación de la representación y respues
 ## Falsabilidad
 
 Propiedad de una hipótesis cuyas consecuencias permiten especificar observaciones que la debilitarían o refutarían. Exige registrar criterios antes del resultado y no reformular retrospectivamente la hipótesis para protegerla.
+
+## Mapeo corporal estable / `stable body-to-sensor mapping`
+
+Predisposición heredada por la cual perturbaciones repetidas sobre la misma parte o variable corporal afectan el mismo canal o conjunto de canales, salvo transformaciones declaradas de ruido, intensidad o latencia. Es estructura inicial, no aprendizaje ni body model adquirido.
 
 ## Ground truth
 
@@ -72,6 +92,26 @@ Representación modificable construida por el sistema sobre regularidades, relac
 ## Patrón
 
 Estructura o activación interna aprendida a partir de combinaciones recurrentes de percepción, memoria y consecuencias. Su identificador no lleva semántica humana. Una interpretación como “amenaza” pertenece al investigador, no al patrón.
+
+## Predicción
+
+Estado interno trazable, producido antes del resultado, que diferencia consecuencias futuras esperadas a partir de información accesible e historia. Anticipar no implica usar la predicción para elegir ni implica consciencia.
+
+## Preferencia condicionada
+
+Cambio de conducta ante un patrón inicialmente neutro, ocurrido antes de una nueva consecuencia corporal y dependiente de la asociación histórica entre ese patrón, acciones y consecuencias. Se distingue de reaccionar a una señal corporal presente y no equivale a deseo.
+
+## `ReactiveBaseline`
+
+Control con el mismo cuerpo, sensores, acciones y entorno que el agente estudiado, pero sin memoria dependiente de historia o sin el mecanismo de aprendizaje relevante. Una afirmación de aprendizaje debe superar este control bajo condiciones equiparables.
+
+## Valencia primaria
+
+Predisposición corporal heredada por la cual distintas señales tienen efectos funcionales aversivos o apetitivos. No asigna semántica a entidades ni equivale a reward escalar, dolor o placer.
+
+## Valencia condicionada
+
+Relevancia aprendida de un patrón inicialmente neutro porque predice consecuencias corporales. Su presencia requiere dependencia de historia y no debe confundirse con valencia primaria precargada.
 
 ## Percepción
 

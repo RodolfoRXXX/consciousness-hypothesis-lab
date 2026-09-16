@@ -64,7 +64,7 @@ La primera arquitectura experimental contempla, como mínimo:
 8. valoración;
 9. decisión/acción.
 
-En la V1 estos módulos serán explícitos e interpretables. El aprendizaje estadístico o neuronal se incorporará de forma incremental solo después de establecer una línea base comprensible.
+En la propuesta inicial para V1, estos módulos se concebían como explícitos e interpretables, con incorporación incremental de aprendizaje estadístico o neuronal después de establecer una línea base comprensible.
 
 Esta enumeración registra la propuesta inicial; su necesidad, composición y orden permanecen por revisar antes de implementar V1.
 
@@ -97,6 +97,7 @@ Todavía no hay implementación de los mecanismos. La prioridad actual es fijar 
 - [Informe principal v0.2](docs/PROJECT_REPORT.md)
 - [Revisión del estado del arte](docs/literature/state-of-the-art.md)
 - [Procedencia del desarrollo: herencia, aprendizaje y emergencia](docs/development/inheritance-learning-emergence.md)
+- [Alcance experimental del organismo artificial V1](docs/experiments/v1-developmental-scope.md)
 - [ADR-001 — Frontera epistemológica](docs/decisions/ADR-001-epistemic-boundary.md)
 - [Contratos conceptuales de datos](docs/data-contracts.md)
 - [Glosario operativo](docs/glossary.md)
