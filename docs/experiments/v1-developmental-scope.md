@@ -4,6 +4,8 @@
 **Estado:** alcance experimental provisional; no es una especificación de implementación ni un ADR.  
 **Objeto:** definir el organismo mínimo, la procedencia de sus capacidades y la secuencia de pruebas que precederá al diseño del mecanismo de aprendizaje y selección de acción.
 
+**Especificación derivada (2026-09-18):** [aprendizaje, predicción y selección de acción para V1.0–V1.2](../architecture/v1-learning-and-action-selection.md). Traduce este alcance a un mecanismo mínimo provisional sin modificar ADR-001 ni volver obligatorios los módulos cognitivos históricos.
+
 ## 1. Pregunta y límite de V1
 
 La pregunta central es:

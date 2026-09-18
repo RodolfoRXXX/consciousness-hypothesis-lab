@@ -98,6 +98,7 @@ Todavía no hay implementación de los mecanismos. La prioridad actual es fijar 
 - [Revisión del estado del arte](docs/literature/state-of-the-art.md)
 - [Procedencia del desarrollo: herencia, aprendizaje y emergencia](docs/development/inheritance-learning-emergence.md)
 - [Alcance experimental del organismo artificial V1](docs/experiments/v1-developmental-scope.md)
+- [Aprendizaje, predicción y selección de acción V1.0–V1.2](docs/architecture/v1-learning-and-action-selection.md)
 - [ADR-001 — Frontera epistemológica](docs/decisions/ADR-001-epistemic-boundary.md)
 - [Contratos conceptuales de datos](docs/data-contracts.md)
 - [Glosario operativo](docs/glossary.md)

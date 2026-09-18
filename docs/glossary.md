@@ -97,6 +97,10 @@ Estructura o activación interna aprendida a partir de combinaciones recurrentes
 
 Estado interno trazable, producido antes del resultado, que diferencia consecuencias futuras esperadas a partir de información accesible e historia. Anticipar no implica usar la predicción para elegir ni implica consciencia.
 
+## Error de predicción / `prediction_error`
+
+Diferencia entre una consecuencia sensorial predicha antes de actuar y la observada después. En V1.0–V1.2 se conserva por canal corporal para actualización y auditoría; no es reward ni señal automática de valor, selección o exploración.
+
 ## Preferencia condicionada
 
 Cambio de conducta ante un patrón inicialmente neutro, ocurrido antes de una nueva consecuencia corporal y dependiente de la asociación histórica entre ese patrón, acciones y consecuencias. Se distingue de reaccionar a una señal corporal presente y no equivale a deseo.
@@ -104,6 +108,14 @@ Cambio de conducta ante un patrón inicialmente neutro, ocurrido antes de una nu
 ## `ReactiveBaseline`
 
 Control con el mismo cuerpo, sensores, acciones y entorno que el agente estudiado, pero sin memoria dependiente de historia o sin el mecanismo de aprendizaje relevante. Una afirmación de aprendizaje debe superar este control bajo condiciones equiparables.
+
+## Selector lexicográfico
+
+Regla normativa heredada que ordena alternativas por dimensiones sucesivas sin reducirlas a una suma escalar. En V1.0–V1.2 prioriza provisionalmente clases de consecuencia aversiva y solo después la dimensión apetitiva. No es una preferencia aprendida, puede explicar conducta por diseño y sus umbrales permanecen abiertos.
+
+## `UNSEEN` / `UNCERTAIN` / `KNOWN`
+
+Clasificación mínima de evidencia según cantidad de observaciones de un par estado–acción. Representa falta de experiencia de forma rudimentaria; `KNOWN` no garantiza baja variabilidad ni una predicción correcta.
 
 ## Valencia primaria
 

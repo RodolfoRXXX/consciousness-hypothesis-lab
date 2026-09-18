@@ -10,6 +10,8 @@
 
 **Alcance V1 (2026-09-16):** el [alcance experimental del organismo artificial V1](experiments/v1-developmental-scope.md) define provisionalmente `Agent(t0)`, cuerpo mínimo, consecuencias corporales, aprendizaje anticipatorio, `ReactiveBaseline`, falsadores y escalones experimentales. No adopta la lista modular histórica como arquitectura obligatoria, no crea ADR-002 y mantiene la consciencia fuera del criterio de éxito de V1.
 
+**Mecanismo V1.0–V1.2 (2026-09-18):** la [especificación de aprendizaje, predicción y selección](architecture/v1-learning-and-action-selection.md) propone estados discretos, memoria asociativa one-step, consecuencias corporales multidimensionales, selector normativo auditable y controles R/P/D/D-ablated. Sus mecanismos siguen provisionales; no implementa código ni crea ADR-002.
+
 Este documento es la versión Markdown mantenible del informe principal. La versión 0.1 original se conserva sin modificaciones en [`PROJECT_REPORT_v0.1.docx`](PROJECT_REPORT_v0.1.docx). Esta versión no reemplaza su historial: registra qué formulaciones se revisaron y por qué.
 
 ## 1. Propósito y alcance
