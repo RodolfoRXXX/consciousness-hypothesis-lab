@@ -6,6 +6,8 @@
 
 **Especificación derivada (2026-09-18):** [aprendizaje, predicción y selección de acción para V1.0–V1.2](../architecture/v1-learning-and-action-selection.md). Traduce este alcance a un mecanismo mínimo provisional sin modificar ADR-001 ni volver obligatorios los módulos cognitivos históricos.
 
+El [perfil perceptivo mínimo](../architecture/v1-perception-and-state.md) define para esos escalones un microentorno reducido con dos acciones y sin navegación. Es un subconjunto experimental del mundo 2D y del repertorio de tres o cuatro acciones previstos para fases posteriores; no reemplaza ese roadmap.
+
 ## 1. Pregunta y límite de V1
 
 La pregunta central es:
@@ -203,6 +205,8 @@ No se fija una medida de incertidumbre, política ni algoritmo de exploración. 
 ## 7. Acciones mínimas
 
 El repertorio provisional contiene tres o cuatro acciones motoras discretas, conceptualmente equivalentes a avanzar, girar a la izquierda, girar a la derecha e interactuar. En el estado cognitivo pueden representarse como `action_0`, `action_1`, etcétera; no requieren significado lingüístico.
+
+Para aislar V1.0–V1.2, la especificación derivada reduce temporalmente ese repertorio a `action_0` y `action_1` en un microentorno sin navegación. Las tres o cuatro acciones espaciales permanecen provisionales para los escalones posteriores.
 
 El significado físico de cada actuador, sus límites y su copia de comando son heredados. La elección aprendida entre acciones no lo es. Debe auditarse si la existencia de una acción especializada como «interactuar», su orden o sus precondiciones ya segmentan entidades o revelan la solución.
 

@@ -3,3 +3,4 @@
 Especificaciones funcionales provisionales que traducen el alcance experimental a mecanismos auditables sin convertirlos todavía en decisiones ADR ni en código.
 
 - [V1 learning, prediction, and action selection](v1-learning-and-action-selection.md) — mecanismo mínimo propuesto para V1.0–V1.2.
+- [V1 perception and state](v1-perception-and-state.md) — microentorno y representación sensorial discreta mínima para V1.0–V1.2.

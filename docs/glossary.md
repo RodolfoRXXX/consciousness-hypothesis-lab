@@ -111,11 +111,15 @@ Control con el mismo cuerpo, sensores, acciones y entorno que el agente estudiad
 
 ## Selector lexicográfico
 
-Regla normativa heredada que ordena alternativas por dimensiones sucesivas sin reducirlas a una suma escalar. En V1.0–V1.2 prioriza provisionalmente clases de consecuencia aversiva y solo después la dimensión apetitiva. No es una preferencia aprendida, puede explicar conducta por diseño y sus umbrales permanecen abiertos.
+Regla normativa heredada que ordena alternativas por dimensiones sucesivas sin reducirlas a una suma escalar. En V1.0–V1.2 minimiza directamente la predicción del primer canal corporal y, solo entre empates exactos, maximiza la del segundo. No es una preferencia aprendida y puede explicar conducta por diseño.
 
-## `UNSEEN` / `UNCERTAIN` / `KNOWN`
+## `UNSEEN` / `SEEN`
 
-Clasificación mínima de evidencia según cantidad de observaciones de un par estado–acción. Representa falta de experiencia de forma rudimentaria; `KNOWN` no garantiza baja variabilidad ni una predicción correcta.
+Clasificación mínima de exposición de un par estado–acción: `UNSEEN` significa `n = 0` y `SEEN`, `n > 0`. `SEEN` no significa conocido, confiable ni de baja variabilidad. V1.0–V1.2 no incorpora `N_min` ni una clase de incertidumbre cognitiva.
+
+## Política de cobertura local
+
+Predisposición heredada que selecciona aleatoriamente acciones `UNSEEN` disponibles en el estado perceptivo exacto hasta obtener una muestra de cada una. No es curiosidad, motivación intrínseca ni exploración persistente.
 
 ## Valencia primaria
 
