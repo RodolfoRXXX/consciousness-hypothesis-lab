@@ -2,7 +2,7 @@
 
 **Fecha:** 2026-09-18
 
-**Estado:** perfil perceptivo provisional previo a código; no es un ADR.
+**Estado:** fundamento perceptivo del perfil V1.0–V1.2 aceptado por [ADR-002](../decisions/ADR-002-minimal-v1-architecture.md); sus decisiones abiertas continúan provisionales.
 
 **Alcance:** definir exactamente qué puede constituir `s_t` sin entregar identidad, semántica ni Ground Truth. Complementa la [especificación de aprendizaje y selección](v1-learning-and-action-selection.md).
 
@@ -215,7 +215,7 @@ Experience:
 
 ## 13. Qué está fijado estructuralmente y qué queda abierto
 
-### Candidato a congelar antes de código
+### Congelado por ADR-002 para V1.0–V1.2
 
 - microentorno sin navegación para V1.0–V1.2;
 - dos canales externos locales binarios;
@@ -226,7 +226,6 @@ Experience:
 - dos canales corporales binarios;
 - dos acciones neutrales;
 - comparación exacta, sin tolerancia;
-- sensores deterministas sin ruido/pérdida y consecuencia con latencia fija de una transición;
 - ambos comandos disponibles y todas las lecturas presentes en cada ensayo válido.
 
 ### Abierto antes de implementación
@@ -234,6 +233,7 @@ Experience:
 - magnitudes y dinámica exacta de los cambios verdaderos en `energy`/`integrity`;
 - asignación y contrabalanceo de patrones X/Y entre corridas;
 - temporización exacta de presentación, acción y consecuencia;
+- incorporación futura de ruido, pérdida sensorial o latencia variable;
 - criterio externo para invalidar una corrida si la interfaz viola las lecturas/acciones requeridas.
 
 ## 14. Auditoría adversarial
@@ -253,8 +253,10 @@ Antes de código debe intentarse refutar la neutralidad del estado:
 
 Un patrón perfectamente discriminable no es por sí mismo una fuga: alguna discriminabilidad es necesaria. La fuga aparece cuando la representación entrega la categoría, su consecuencia o una estructura que excede la medición física declarada.
 
-## 15. Relación con ADR-001 y contratos
+## 15. Relación con ADR-001, ADR-002 y contratos
 
 El perfil respeta ADR-001 porque toda entrada atraviesa sensores y no incluye Ground Truth ni metadata. También conserva la tensión aceptada: separar canales externos y corporales es estructura heredada.
+
+[ADR-002](../decisions/ADR-002-minimal-v1-architecture.md) acepta este perfil dentro de V1.0–V1.2. La dinámica corporal verdadera, las asignaciones experimentales y la temporización de protocolo permanecen abiertas.
 
 En [data-contracts.md](../data-contracts.md), `RawObservation` admite valores de canal y separación interno/externo; eso basta. `PerceivedState` solo se necesita como vista mínima si la interfaz exige nombrar la discretización. Entidad, distancia, tamaño, movimiento, energía percibida e integridad percibida no forman parte de este perfil. `PatternState`, `SelfState` e `IntegratedState` no son necesarios.

@@ -2,7 +2,7 @@
 
 **Fecha:** 2026-09-18
 
-**Estado:** especificación funcional provisional previa a código; no es un ADR ni congela el algoritmo final.
+**Estado:** fundamento funcional de la arquitectura V1.0–V1.2 aceptada por [ADR-002](../decisions/ADR-002-minimal-v1-architecture.md); sus decisiones abiertas continúan provisionales.
 
 **Alcance:** mecanismo mínimo para V1.0–V1.2 del [alcance experimental V1](../experiments/v1-developmental-scope.md).
 
@@ -622,9 +622,9 @@ Esta tabla define acceso causal, no necesariamente clases o procesos separados.
 - señales corporales actuales como parte de `s`;
 - labels humanos, identidad o causa real.
 
-## 27. Decisiones candidatas a congelar antes de código
+## 27. Decisiones congeladas por ADR-002
 
-Estas decisiones están suficientemente delimitadas para una revisión de congelamiento posterior, pero continúan **provisionales** mientras no exista ADR o aprobación documental explícita:
+ADR-002 aceptó para V1.0–V1.2 las siguientes decisiones:
 
 - separación Ground Truth / estado sensorial;
 - microentorno sin navegación, dos canales externos binarios y dos acciones;
@@ -646,7 +646,7 @@ Estas decisiones están suficientemente delimitadas para una revisión de congel
 - seed registrada solo como metadata;
 - capacidad de ablación específica.
 
-La primera ya está congelada por ADR-001. Las restantes no lo están por aparecer en esta lista.
+La frontera epistemológica procede de ADR-001. ADR-002 congela el resto únicamente dentro de su alcance; los detalles de protocolo y las decisiones de la sección siguiente permanecen abiertos.
 
 ## 28. Decisiones abiertas
 
@@ -723,8 +723,6 @@ La prueba anticipatoria debe realizarse cuando ambas acciones del estado de prue
 
 Para reforzar causalidad de contenido, una intervención complementaria puede intercambiar las predicciones entre `action_0` y `action_1` manteniendo `s`, `M` y selector. Si la elección no sigue el intercambio, la traza declarada no explica causalmente la acción. Esta intervención no reemplaza D-ablated.
 
-## 32. Estado y necesidad de ADR
+## 32. Estado de la decisión
 
-Este documento no crea ADR-002. La separación epistemológica continúa congelada por ADR-001. La especificación de estados discretos, memoria asociativa, predictor/selector, política normativa y controles todavía es provisional.
-
-Antes de código se recomienda revisar y aceptar mediante ADR el paquete mínimo completo —representación perceptiva, memoria histórica, cobertura local, selector lexicográfico, separación predictor/selector y condiciones R/P/D/D-ablated— porque determina interfaces, normatividad heredada y significado causal de los resultados. Este documento no crea ese ADR. Exponer información prohibida o cambiar la separación interno/externo sí exigiría revisar formalmente ADR-001.
+[ADR-002](../decisions/ADR-002-minimal-v1-architecture.md) acepta el paquete mínimo completo —representación perceptiva, memoria histórica, cobertura local, selector lexicográfico, separación predictor/selector, condiciones R/P/D/D-ablated y permutación de predicciones—. Este documento conserva su razonamiento y sus riesgos; ADR-002 es la fuente normativa. Exponer información prohibida o cambiar la separación interno/externo exigiría además revisar formalmente ADR-001.

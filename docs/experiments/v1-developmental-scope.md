@@ -6,6 +6,8 @@
 
 **Especificación derivada (2026-09-18):** [aprendizaje, predicción y selección de acción para V1.0–V1.2](../architecture/v1-learning-and-action-selection.md). Traduce este alcance a un mecanismo mínimo provisional sin modificar ADR-001 ni volver obligatorios los módulos cognitivos históricos.
 
+**Decisión aceptada (2026-09-18):** [ADR-002](../decisions/ADR-002-minimal-v1-architecture.md) congela el subconjunto arquitectónico de V1.0–V1.2. Las propuestas de cuerpo sostenido, mundo 2D y fases V1.3+ de este documento conservan su carácter provisional.
+
 El [perfil perceptivo mínimo](../architecture/v1-perception-and-state.md) define para esos escalones un microentorno reducido con dos acciones y sin navegación. Es un subconjunto experimental del mundo 2D y del repertorio de tres o cuatro acciones previstos para fases posteriores; no reemplaza ese roadmap.
 
 ## 1. Pregunta y límite de V1
@@ -493,32 +495,24 @@ La elección ordinaria entre algoritmos o parámetros dentro de esta frontera no
 
 ### CONGELADO
 
-Solo lo aceptado por ADR-001: separación `GroundTruthState` → sensores → cognición; ausencia de acceso directo del agente a Ground Truth y metadata; tick absoluto e identidad técnica externos; entradas ambientales y corporales mediadas por `RawObservation`; separación arquitectónica inicial entre señales internas y externas; ausencia de etiquetas semánticas humanas en el flujo cognitivo.
+ADR-001 congela la separación `GroundTruthState` → sensores → cognición, la ausencia de acceso directo a Ground Truth y metadata y la separación inicial de señales internas/externas. ADR-002 congela para V1.0–V1.2 el microentorno sin navegación, estado externo binario exacto, dos acciones, dos señales corporales binarias mediadas, memoria asociativa mínima, aprendizaje one-step, cobertura local, selector lexicográfico, separación predictor/selector y controles causales. El detalle autoritativo está en ambos ADR.
 
 ### PROVISIONAL PARA V1
 
 - cuerpo mínimo con `energy` e `integrity`;
-- dos señales corporales principales;
-- `stable body-to-sensor mapping`;
-- ausencia de reward escalar y de `homeostatic_error` en la línea base;
-- valencia primaria corporal multidimensional;
-- aprendizaje de transiciones estado–acción–consecuencia;
+- `homeostatic_error` fuera de la línea base más allá del perfil V1.0–V1.2;
 - copia neutral de comando motor;
-- `ReactiveBaseline` obligatorio;
 - mundo pequeño, 2D, parcialmente observable, con un agente y sin interacción social;
 - pocos tipos neutrales de entidades y tres o cuatro acciones discretas;
 - secuencia experimental y escalones V1.0–V1.7.
 
 ### ABIERTO
 
-- algoritmo concreto de aprendizaje;
-- mecanismo concreto de exploración;
-- forma exacta, capacidad y persistencia de memoria;
-- cantidad, rango y transformación de sensores externos;
-- representación perceptiva y grado de segmentación;
-- implementación y efectos de valencia primaria;
-- función de selección de acción;
-- cómo representar y comparar consecuencias anticipadas;
+- mecanismos alternativos o posteriores de aprendizaje, exploración y memoria fuera del perfil V1.0–V1.2;
+- cantidad, rango y transformación de sensores para V1.3+;
+- representaciones perceptivas posteriores y grado de segmentación;
+- extensión de la valencia y trade-offs entre canales;
+- funciones de selección alternativas o posteriores;
 - parámetros, rangos y dinámica corporal;
 - ruido, latencia y dinámica temporal;
 - definición matemática de similitud y generalización;

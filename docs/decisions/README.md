@@ -14,3 +14,4 @@ Each ADR should contain:
 ## Index
 
 - [ADR-001 — Frontera epistemológica entre mundo, percepción y modelo interno](ADR-001-epistemic-boundary.md) — accepted, 2026-09-14
+- [ADR-002 — Arquitectura mínima para V1.0–V1.2](ADR-002-minimal-v1-architecture.md) — accepted, 2026-09-18

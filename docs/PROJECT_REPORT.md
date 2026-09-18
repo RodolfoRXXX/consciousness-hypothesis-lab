@@ -14,6 +14,8 @@
 
 **Perfil perceptivo V1.0–V1.2 (2026-09-18):** la [especificación mínima de percepción y estado](architecture/v1-perception-and-state.md) propone un microentorno sin navegación, dos canales externos binarios, estado por vector exacto, dos acciones neutrales y señales corporales fuera de la clave predictiva inicial. La dinámica corporal verdadera y la temporización concreta siguen abiertas.
 
+**Decisión arquitectónica V1.0–V1.2 (2026-09-18):** [ADR-002](decisions/ADR-002-minimal-v1-architecture.md) acepta el paquete mínimo de percepción, memoria asociativa, aprendizaje one-step, predictor/selector separables, política lexicográfica explícitamente heredada y controles R/P/D/D-ablated. No congela el protocolo, la dinámica `energy`/`integrity` ni fases V1.3+.
+
 Este documento es la versión Markdown mantenible del informe principal. La versión 0.1 original se conserva sin modificaciones en [`PROJECT_REPORT_v0.1.docx`](PROJECT_REPORT_v0.1.docx). Esta versión no reemplaza su historial: registra qué formulaciones se revisaron y por qué.
 
 ## 1. Propósito y alcance

@@ -90,7 +90,7 @@ El método principal será la **ablación modular**: comparar un agente completo
 
 Todavía no hay implementación de los mecanismos. La prioridad actual es fijar estructura, documentación y contratos experimentales antes de comenzar a programar comportamiento.
 
-**Estado documental actual:** revisión del estado del arte y formalización de procedencia heredada, aprendida, emergente y experimental. La propuesta modular anterior se conserva como historia del diseño; todavía no es la arquitectura V1 aprobada.
+**Estado documental actual:** ADR-002 acepta la arquitectura mínima de V1.0–V1.2. La propuesta modular anterior se conserva como historia del diseño y no pasa a ser obligatoria; el protocolo experimental y la implementación siguen pendientes.
 
 ## Documentación vigente
 
@@ -101,6 +101,7 @@ Todavía no hay implementación de los mecanismos. La prioridad actual es fijar 
 - [Aprendizaje, predicción y selección de acción V1.0–V1.2](docs/architecture/v1-learning-and-action-selection.md)
 - [Percepción y estado mínimo V1.0–V1.2](docs/architecture/v1-perception-and-state.md)
 - [ADR-001 — Frontera epistemológica](docs/decisions/ADR-001-epistemic-boundary.md)
+- [ADR-002 — Arquitectura mínima V1.0–V1.2](docs/decisions/ADR-002-minimal-v1-architecture.md)
 - [Contratos conceptuales de datos](docs/data-contracts.md)
 - [Glosario operativo](docs/glossary.md)
 
